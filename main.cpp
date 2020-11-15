@@ -35,6 +35,10 @@ int main(void)
 			case 1:
 				
 				printf("PRACTICE 1 \n");
+
+				p1main();
+
+
 				break;
 
 			case 0:
@@ -48,6 +52,5 @@ int main(void)
 		}
 	
 	}
-
 	return 0;
 }
