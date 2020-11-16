@@ -139,8 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="practice1.cpp" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="practice1.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="practice1.h" />
