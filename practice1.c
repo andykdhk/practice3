@@ -17,19 +17,30 @@ void input2();
 void input3();
 void input4();
 void strSplit();
+void strType();
+
+
 
 void p1main()
 {
+	
+	strType();
+	
+}
+void strType()
+{
+	char str1 = 'a';//changeable;
+	char str2[6] = "World";//changeable;
+	const char* str3 = "Hello";//not changeable; so const; address keep changing; read-only memory;
+	char* str4 = malloc(sizeof(char) * 20);//changeable; heap; not read-only; str4[0] = 'a';//dereferencing explain at bottom.
+	strcpy(str4, "sibal nom a3");
+	
 
-	//printf("type two words that you want to combine");
-	/*
-	const char *str1 = "Hello";
-	char str2[6] = "World";
-	printf("%s %s\n",str1,str2);
-	*/
-	
-	strSplit();
-	
+	printf("%s \n",str3);
+	//printf("%s %s\n", str3, str2);
+
+
+	free(str4);
 }
 /**************************************************************************************char[] + one word + scanf*/
 void input1()
@@ -55,7 +66,7 @@ void input2()
 void input3()
 {
 	int err2 = getchar();
-	char *str = malloc(sizeof(char) * 10);// does not work at .cpp file since c++ compiler does not support
+	char *str = malloc(sizeof(char) * 10);// malloc does not work at .cpp file since c++ compiler does not support
 	
 	printf("type words: \n");
 	int err = scanf("%s", str);
@@ -76,16 +87,20 @@ void input4()
 void strSplit()
 {
 	char str[20] = "sibal nom a";
+	char *str2 = "sibal nom a2"; // address keep changing so does not work
+	char* str3 = malloc(sizeof(char) * 20);
+	strcpy(str3,"sibal nom a3");
 
-	char* ptr = strtok(str," ");
-
+	/*split*********************/
+	char* ptr = strtok(str3," ");
 	while (ptr != NULL)
 	{
 		printf("%s \n",ptr);
 		ptr = strtok(NULL, " ");
-	
 	}
+	/**********************split*/
 
+	free(str3);
 }
 
 /*
@@ -113,5 +128,11 @@ ptr = strtok(NULL, " ");
 4. nom\0a\0
    ptr = nom\0
    str = a\0
+
+*/
+
+/*
+A pointer references a location in memory, 
+and obtaining the value at the location a pointer refers to is known as dereferencing the pointer.
 
 */
