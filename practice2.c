@@ -12,13 +12,14 @@ study:
 
 #include <stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 
 
 int* numPt();
-char* str1();
-char* str2();
-
+char* rt1();
+char* rt2();
+void* mallocPtr();
 
 
 void p2main()
@@ -31,13 +32,27 @@ void p2main()
 	free(num);
 	*/
 
-
+	/*
 	char* str;
-	str = str1();
-	//str = str2();
+	str = rt1();
+	//str = rt2();
 
 	printf("%s\n", str);
 	//free(str);
+	*/
+
+	char* str = mallocPtr();
+	strcpy(str, "hel lo");
+	printf("[mallocPtr()]:%s \n",str);
+	free(str);
+	
+	int* num = mallocPtr();
+	num[0] = 10;
+	printf("[mallocPtr()]:%d \n", num[0]);
+	free(num);
+	
+
+	
 }
 
 
@@ -68,10 +83,10 @@ purpose: to return pointer
 * 
 *so
 * 
-* ram(stack) == impossible
-* rom(data) == possible
+*  str[20] -> string stored in stack var
+* *str -> just a pointer for read-only memory 
 */
-char* str1()
+char* rt1()
 {
 	//char str[20] = "hello world"; 
 	char* str = "hello world";
@@ -79,11 +94,19 @@ char* str1()
 	return str;
 }
 /*
-*ram(heap) == possible
+* ram(heap) == possible
+* str == just a pointer for heap memory
 */
-char* str2()
+char* rt2()
 {
 	char* str = malloc(sizeof(char) * 20);
 	strcpy(str, "Hello, world!");
 	return str;
 }
+
+void* mallocPtr()
+{
+	void* ptr = malloc(100);// 100 bytes
+	return ptr;
+}
+

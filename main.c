@@ -9,6 +9,7 @@ study:
 #pragma warning(disable: 4996)
 
 #include "practice1.h"
+#include "practice2.h"
 #include<stdio.h>
 
 
@@ -20,7 +21,8 @@ int main(void)
 	while (1)
 	{
 		printf("[0]:EXIT \n");
-		printf("[1]: \n");
+		printf("[1]string handling: \n");
+		printf("[2]function handling: \n");
 
 		retMenu = scanf("%d", &menu);
 		if (retMenu == 0)
@@ -33,12 +35,13 @@ int main(void)
 		switch (menu)
 		{
 			case 1:
-				
-				printf("PRACTICE 1 \n");
 
 				p1main();
+				break;
 
-
+			case 2:
+			
+				p2main();
 				break;
 
 			case 0:

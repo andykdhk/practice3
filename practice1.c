@@ -23,7 +23,7 @@ void strType();
 
 void p1main()
 {
-	
+	printf("PRACTICE 1 \n");
 	strType();
 	
 }
@@ -87,7 +87,7 @@ void input4()
 void strSplit()
 {
 	char str[20] = "sibal nom a";
-	char *str2 = "sibal nom a2"; // address keep changing so does not work
+	char *str2 = "sibal nom a2"; 
 	char* str3 = malloc(sizeof(char) * 20);
 	strcpy(str3,"sibal nom a3");
 
@@ -102,6 +102,8 @@ void strSplit()
 
 	free(str3);
 }
+
+
 
 /*
 1. 3 different types of inputs
