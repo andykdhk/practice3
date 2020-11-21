@@ -10,6 +10,8 @@ study:
 
 #include "practice1.h"
 #include "practice2.h"
+#include "practice3.h"
+#include "pointer_reason.h"
 #include<stdio.h>
 
 
@@ -22,7 +24,9 @@ int main(void)
 	{
 		printf("[0]:EXIT \n");
 		printf("[1]string handling: \n");
-		printf("[2]function handling: \n");
+		printf("[2]function return handling: \n");
+		printf("[3]function parameter handling: \n");
+		printf("[4]why we use pointer: \n");
 
 		retMenu = scanf("%d", &menu);
 		if (retMenu == 0)
@@ -42,6 +46,16 @@ int main(void)
 			case 2:
 			
 				p2main();
+				break;
+
+			case 3:
+
+				p3main();
+				break;
+
+			case 4:
+
+				ptr_reason();
 				break;
 
 			case 0:

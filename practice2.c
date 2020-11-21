@@ -2,9 +2,7 @@
 File: practice2.c
 Date: Nov 18, 2020
 Name: Andrew Kang
-Goal:
-study:
-
+Goal: pointer return
 */
 #pragma warning(disable: 4996)
 
