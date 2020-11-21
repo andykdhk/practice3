@@ -27,6 +27,9 @@
     <ClCompile Include="practice3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pointer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="practice1.h">
@@ -38,10 +41,7 @@
     <ClInclude Include="practice3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="pointer_reason.c">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pointer_reason.h">
+    <ClInclude Include="pointer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

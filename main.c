@@ -11,7 +11,8 @@ study:
 #include "practice1.h"
 #include "practice2.h"
 #include "practice3.h"
-#include "pointer_reason.h"
+#include "pointer.h"
+
 #include<stdio.h>
 
 
@@ -55,7 +56,7 @@ int main(void)
 
 			case 4:
 
-				ptr_reason();
+				ptrMain();
 				break;
 
 			case 0:

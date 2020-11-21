@@ -143,10 +143,10 @@
     <ClCompile Include="practice1.c" />
     <ClCompile Include="practice2.c" />
     <ClCompile Include="practice3.c" />
+    <ClCompile Include="pointer.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pointer_reason.h" />
-    <ClInclude Include="pointer_reason.c" />
+    <ClInclude Include="pointer.h" />
     <ClInclude Include="practice1.h" />
     <ClInclude Include="practice2.h" />
     <ClInclude Include="practice3.h" />
