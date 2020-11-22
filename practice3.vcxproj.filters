@@ -30,6 +30,9 @@
     <ClCompile Include="pointer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="file_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="practice1.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="pointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_io.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

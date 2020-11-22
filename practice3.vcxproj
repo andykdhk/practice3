@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="file_io.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="practice1.c" />
     <ClCompile Include="practice2.c" />
@@ -146,6 +147,7 @@
     <ClCompile Include="pointer.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="file_io.h" />
     <ClInclude Include="pointer.h" />
     <ClInclude Include="practice1.h" />
     <ClInclude Include="practice2.h" />

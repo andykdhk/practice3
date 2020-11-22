@@ -12,6 +12,7 @@ study:
 #include "practice2.h"
 #include "practice3.h"
 #include "pointer.h"
+#include "file_io.h"
 
 #include<stdio.h>
 
@@ -28,6 +29,7 @@ int main(void)
 		printf("[2]function return handling: \n");
 		printf("[3]function parameter handling: \n");
 		printf("[4]why we use pointer: \n");
+		printf("[5]read file: \n");
 
 		retMenu = scanf("%d", &menu);
 		if (retMenu == 0)
@@ -57,6 +59,11 @@ int main(void)
 			case 4:
 
 				ptrMain();
+				break;
+
+			case 5:
+
+				read_file();
 				break;
 
 			case 0:
