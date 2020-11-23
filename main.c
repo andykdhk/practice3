@@ -13,6 +13,8 @@ study:
 #include "practice3.h"
 #include "pointer.h"
 #include "file_io.h"
+#include "struct.h"
+
 
 #include<stdio.h>
 
@@ -30,6 +32,7 @@ int main(void)
 		printf("[3]function parameter handling: \n");
 		printf("[4]why we use pointer: \n");
 		printf("[5]read file: \n");
+		printf("[6]all about struct: \n");
 
 		retMenu = scanf("%d", &menu);
 		if (retMenu == 0)
@@ -66,6 +69,16 @@ int main(void)
 				read_file();
 				break;
 
+
+			case 6:
+
+				struct_main();
+				break;
+			
+			
+			
+			
+			
 			case 0:
 
 				printf("BYE \n");
